@@ -3,6 +3,7 @@ import Base from "./Base"
 import { auth } from "../config/Firebase";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import Bloco from "../components/BlocoDBF/Bloco";
 
 const Home = () => {
 
@@ -20,9 +21,7 @@ const Home = () => {
   return (
     <Base>
       <div className="HeaderA">
-        <h1>
-        Projetos 
-        </h1>
+        <Bloco />
         
       </div>
     </Base>
