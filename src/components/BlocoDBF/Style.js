@@ -6,15 +6,13 @@ const Container = styled.div`
     height: min-content;
     background-color: rgb(0, 37, 85);
     border: 1px solid var(--primaria);
-    
-`;
+    h1, p {
+    color: var(--background);
+    font: Krub, sans-serif;
+    margin: 10px;
+    margin-left: -20px;
+    }
 
-const Titulo = styled.h3`
-    text-decoration: wavy;
-`;
+`
 
-const Texto = styled.p`
-    padding: 0 .5em
-`;
-
-export {Container, Titulo, Texto}
+    export {Container}
