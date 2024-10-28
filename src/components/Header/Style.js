@@ -7,6 +7,8 @@ const Top = styled.header`
   flex-direction: row;
   margin: 0;
   a {
+    display: flex;
+    vertical-align: baseline;
     text-align: center;
     padding: .3em;
     margin: 0 .7em;
@@ -15,7 +17,6 @@ const Top = styled.header`
     font-weight: bold;
     color: var(--primaria);
     text-transform: uppercase;
-    /*border-radius: .3em;*/
     &:hover{
       background-color: var(--destaque);
       color: var(--secundaria);

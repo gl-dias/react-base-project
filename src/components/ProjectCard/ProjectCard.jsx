@@ -7,10 +7,10 @@ import { Container } from "./Style";
             <Container>
                 <div id='cards'>
                     <h2 id='titulo'>{props.title}</h2>
-                    <img src={props.img} id='img'></img>
+                    <img id='img' src={props.img}></img>
                     <p id='text'>{props.text}</p>
                     <button> 
-                        <a id='botom'>{props.botom}</a>
+                        <a id='button'>{props.button}</a>
                     </button>
                 </div>
             </Container>

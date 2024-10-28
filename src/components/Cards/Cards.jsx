@@ -21,7 +21,7 @@ function Projects() {
                 title={item.title} 
                 text={item.text} 
                 img={item.img} 
-                botom={item.botom} />
+                button={item.button} />
             ))}
         </Personalizacao>
     )

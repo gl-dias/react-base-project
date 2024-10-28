@@ -12,11 +12,14 @@ const Container = styled.div`
   background-color: var(--background);
   
 
-  title {
-    padding: 0.5em;    
+  titulo {
+    padding: 0.5em; 
+    color: rgb(18, 18, 18);
+    font-family: Krub, sans-serif;
+    font-size: 22px;   
   }
   
-  botom {
+  button {
     padding: 10px 20px;
     background: #F5AC00;
     border: none;
@@ -26,6 +29,8 @@ const Container = styled.div`
    
  text {
     padding: 0 .5em;
+    
+    font-size: 14px;
   }
  
  img {
