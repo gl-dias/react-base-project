@@ -14,13 +14,10 @@ const Container = styled.div`
 
   titulo {
     padding: 0.5em; 
-    color: rgb(18, 18, 18);
-    font-family: Krub, sans-serif;
-    font-size: 22px;   
   }
   
   button {
-    padding: 10px 20px;
+    padding: 16px 24px;
     background: #F5AC00;
     border: none;
     border-radius: 5px;
@@ -29,8 +26,6 @@ const Container = styled.div`
    
  text {
     padding: 0 .5em;
-    
-    font-size: 14px;
   }
  
  img {
