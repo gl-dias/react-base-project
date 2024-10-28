@@ -8,7 +8,6 @@ const Personalizacao = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 15px;
-    gap: 5px;
-    padding-bottom: 50px;
+    gap: 5px 10px;
 `
 export {Personalizacao}
