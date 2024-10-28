@@ -8,7 +8,6 @@ position: fixed;
 bottom: 0;
 width: 100%;
 
-
 #navegar {
     display: flex;
     justify-content: space-around;

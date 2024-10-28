@@ -4,6 +4,7 @@ import { auth } from "../config/Firebase";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Bloco from "../components/BlocoDBF/Bloco";
+import Cards from "../components/Cards/Cards"
 
 const Home = () => {
 
@@ -22,7 +23,7 @@ const Home = () => {
     <Base>
       <div className="HeaderA">
         <Bloco />
-        
+        <Cards />
       </div>
     </Base>
   )
