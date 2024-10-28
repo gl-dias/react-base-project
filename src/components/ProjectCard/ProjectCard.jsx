@@ -10,7 +10,7 @@ import { Container } from "./Style";
                     <img id='img' src={props.img}></img>
                     <p id='text'>{props.text}</p>
                     <button> 
-                        <a id='button'>{props.button}</a>
+                        <a to="./pages/Detalhamento" id='button'>{props.button}</a>
                     </button>
                 </div>
             </Container>
