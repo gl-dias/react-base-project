@@ -16,12 +16,13 @@ function Projects() {
 
     return (
         <Personalizacao> 
-            {listc.map((item, index) => (
-                <Card key={index} 
+            {listc.map((item) => (
+                <Card key={item.id} 
                 title={item.title} 
                 text={item.text} 
                 img={item.img} 
-                button={item.button} />
+                button={item.button}
+                id={item.id} />
             ))}
         </Personalizacao>
     )
