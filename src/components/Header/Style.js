@@ -6,9 +6,8 @@ const Top = styled.header`
   display: flex;
   flex-direction: row;
   margin: 0;
+  align-items: center;
   a {
-    display: flex;
-    vertical-align: baseline;
     text-align: center;
     padding: .3em;
     margin: 0 .7em;
@@ -20,7 +19,7 @@ const Top = styled.header`
     &:hover{
       background-color: var(--destaque);
       color: var(--secundaria);
-    }
+      }
   }
 `
 
