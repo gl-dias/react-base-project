@@ -9,9 +9,11 @@ import { Container } from "./Style";
                     <h2 id='titulo'>{props.title}</h2>
                     <img id='img' src={props.img}></img>
                     <p id='text'>{props.text}</p>
+                    <a href="./#/detalhamento" id='button'>
                     <button> 
-                        <a to="./pages/Detalhamento" id='button'>{props.button}</a>
+                        {props.button}
                     </button>
+                    </a>
                 </div>
             </Container>
         )
