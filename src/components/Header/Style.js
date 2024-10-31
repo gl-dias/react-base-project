@@ -21,6 +21,25 @@ const Top = styled.header`
       color: var(--secundaria);
       }
   }
-`
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    
+    a {
+      margin: 0.5em 0;
+    }
+  }
 
-export {Top}
+  @media (max-width: 425px) {
+    padding: 0.5em 1em;
+    
+    a {
+      min-width: 100%;
+      text-align: left;
+    }
+  }
+`;
+
+export { Top };
+
