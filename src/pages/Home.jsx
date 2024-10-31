@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Bloco from "../components/BlocoDBF/Bloco";
 import Cards from "../components/Cards/Cards"
+import Busca from "../components/BarradeBusca/BarradeBusca";
 
 const Home = () => {
 
@@ -23,8 +24,12 @@ const Home = () => {
     <Base>
       <div className="HeaderA">
         <Bloco />
+        <Busca />
+      </div>
+      <div className="Card">
         <Cards />
       </div>
+      
     </Base>
   )
 }
