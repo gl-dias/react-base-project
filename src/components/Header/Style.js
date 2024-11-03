@@ -21,6 +21,26 @@ const Top = styled.header`
       color: var(--secundaria);
       }
   }
+
+  .search-container{
+    position: relative;
+    display: inline-block;
+  }
+
+  .search-input{
+    paddingRight: 30px;
+    type=text;
+    placeholder="Pesquisar...";
+  }
+
+  .search-icon{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    cursor: pointer;  
+  }          
   
   @media (max-width: 768px) {
     flex-direction: column;
