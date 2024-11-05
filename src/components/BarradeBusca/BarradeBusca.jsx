@@ -1,15 +1,29 @@
 import React from "react";
+import { useState } from "react";
 import { BBusca } from "./Style";
 
-const Busca = () => {
-    <BBusca>
-        <div className="divContainer">
-            <input className="search"
-                type= "text" 
-                placeholder= "Digite aqui para buscar os projetos"
-                onChange={ (e) => filtra(e.target)} />
-        </div>
-    </BBusca>
-}
+const Busca = ({ onSearch }) => {
+    const [searchTerm, setSearchTerm] = useState("");
+
+    const filtra = (e) => {
+        const value = e.target.value;
+        setSearchTerm(value);
+        onSearch(value);
+    };
+
+    return (
+        <BBusca>
+            <div className = "divContainer">
+                <input 
+                    className = "search"
+                    type = "text" 
+                    value = {searchTerm}
+                    placeholder = "Digite aqui para buscar os projetos"
+                    onChange = {filtra} 
+                />
+            </div>
+        </BBusca>
+    )
+};
 
 export default Busca;
