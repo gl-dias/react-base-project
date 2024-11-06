@@ -24,7 +24,7 @@ const Home = () => {
     <Base>
       <div className="HeaderA">
         <Bloco />
-        <Busca />
+        <Busca /> {/*passar um props para tentar ajeitar o erro*/}
       </div>
       <div className="Card">
         <Cards />
