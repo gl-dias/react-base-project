@@ -3,18 +3,23 @@ import { FooterF } from "./Style";
 
 const Footer = () => (
   <FooterF>
-    <div id="navegar">
+    <div className="navegar">
       <a href="https://www.ibmec.com" target="_blank" rel="noopener noreferrer">
-        <img src="https://intersectorparceiraibmec.com/wp-content/uploads/2023/03/IBMEC-BRAANCO-1024x455.png" alt="Imagem de Link Externo" />
+        <img
+          src="https://intersectorparceiraibmec.com/wp-content/uploads/2023/03/IBMEC-BRAANCO-1024x455.png"
+          alt="Logo IBMEC"
+        />
       </a>
-      <Link to="/">Home</Link>
-      <Link to="/sobrenos">Sobre Nós</Link>
-      <Link to="/projetos">Projetos</Link>
+      <div className="links">
+        <Link to="/">Home</Link>
+        <Link to="/sobrenos">Sobre Nós</Link>
+        <Link to="/projetos">Projetos</Link>
+      </div>
     </div>
-    
+
     <div className="social-container">
       <h3>Redes Sociais</h3>
-      <div id="social">
+      <div className="social-links">
         <div className="social-column">
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-facebook"></i> Facebook
