@@ -1,5 +1,6 @@
 import ProjectCard from "./projectcard"
-
+import React from "react";
+import { FilterF } from "./Style";
 
 const filtro = () => {
     const [dados, setDados] = useState(brutos);
@@ -17,3 +18,6 @@ const filtro = () => {
     placeholder= "filtro"
     onChange={ (e) => filtra(e.target)} />
 }
+
+export default filtro
+

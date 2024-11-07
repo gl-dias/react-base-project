@@ -8,7 +8,7 @@ const Busca = ({ onSearch }) => {
         const value = e.target.value;
         setSearchTerm(value);
         if (onSearch) onSearch(value);
-    };    
+    };   
 
     return (
         <BBusca>

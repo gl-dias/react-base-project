@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const BBusca = styled.div`
     .divContainer {
+
         display: flex;
         justify-content: center;
         filter: drop-shadow(0 0 0.75rem var(--primaria));
