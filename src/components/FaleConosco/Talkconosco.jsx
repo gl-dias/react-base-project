@@ -3,7 +3,12 @@ import { Fale } from "./style";
 const Talkconosco = () => (
     <Fale> 
         <div className="FC">
-            <h2>Fale conosco</h2>
+            <h1>Fale conosco</h1>
+        </div>
+            <h4> Emails para contato:</h4>
+            
+        <div>
+
         </div>
     </Fale>
 );
