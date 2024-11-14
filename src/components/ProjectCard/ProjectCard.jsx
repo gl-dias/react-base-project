@@ -6,7 +6,7 @@ import { Container } from "./Style";
             
             <Container>
                 <div id='cards'>
-                    <h2 id='titulo'>{props.title}</h2>
+                    <h2 id='title'>{props.title}</h2>
                     <img id='img' src={props.img}></img>
                     <p id='text'>{props.text}</p>
                     <a href={`./#/detalhamento/${props.id}`} id='button'>

@@ -11,10 +11,6 @@ const FooterF = styled.footer`
   display: flex;
   flex-direction: column; /* Alterado para coluna */
   align-items: center; /* Centralizado */
-  
-  img {
-    width: 50%; /* Tamanho da imagem ajustado para 50% */
-  }
 
   .navegar {
     display: flex;

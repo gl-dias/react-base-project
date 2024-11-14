@@ -4,14 +4,7 @@ import { FooterF } from "./Style";
 const Footer = () => (
   <FooterF>
     <div className="navegar">
-      <a href="https://www.ibmec.com" target="_blank" rel="noopener noreferrer">
-        <img
-          src="https://intersectorparceiraibmec.com/wp-content/uploads/2023/03/IBMEC-BRAANCO-1024x455.png"
-          alt="Logo IBMEC"
-        />
-      </a>
       <div className="links">
-        <Link to="/">Home</Link>
         <Link to="/sobrenos">Sobre Nós</Link>
         <Link to="/projetos">Projetos</Link>
       </div>

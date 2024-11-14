@@ -11,8 +11,13 @@ const Container = styled.div`
   align-items: center;
   background-color: var(--background);
   
+  h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 
-  titulo {
+  title {
     padding: 0.5em; 
   }
   
