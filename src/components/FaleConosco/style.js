@@ -4,12 +4,11 @@ const Fale = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     background-color: rgb(240, 240, 240);
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin: 20px auto;
+    margin: auto;
 
     h1 {
         color: var(--Secundaria);
@@ -71,7 +70,7 @@ const Bloco = styled.div`
     background-color: var(--secundaria);
     color: var(--background);
     padding: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     text-align: center;
     width: 1000%;
     `;
