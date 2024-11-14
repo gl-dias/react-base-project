@@ -75,25 +75,50 @@ const FooterF = styled.footer`
     transition: color 0.5s ease;
   }
 
+  /* Nova seção de ajuda */
+  .ajuda {
+    text-align: center;
+    margin-top: 20px; /* Espaçamento superior */
+    color: white; /* Cor do texto */
+  }
+
+  .ajuda h4 {
+    margin: 0; /* Remove margem padrão */
+  }
+
+  .ajuda p {
+    margin: 5px 0; /* Espaçamento entre o título e o número */
+  }
+
+  .ajuda a {
+    color: var(--destaque); /* Cor do link */
+    text-decoration: underline; /* Sublinhado para links */
+  }
+
   /* Responsividade */
   @media (max-width: 768px) {
     font-size: 20px;
     padding: 10px 0;
 
     .navegar, 
-    .social-container {
+    .social-container,
+    .ajuda {
       align-items: center;
+    }
+
+    .links {
+      flex-direction: column; /* Muda para coluna em telas menores */
+    }
+
+    .links a {
+      margin: 5px 0; /* Ajusta o espaçamento vertical */
     }
   }
 
   @media (max-width: 425px) {
     font-size: 18px;
     padding: 5px 0;
-    width: 100vw;      
-    margin: 0;         
-    padding: 15px;     
-    font-size: 1.5rem; 
-    
+
     .links a,
     .social-column a {
       width: 100%;
