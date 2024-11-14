@@ -41,7 +41,7 @@ const Card = styled.div`
     }
 
     h3 {
-        color: var(--secundaria);
+        color: var(--primaria);
         font-size: 1.2rem;
     }
 
