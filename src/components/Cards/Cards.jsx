@@ -31,6 +31,7 @@ function Projects() {
                         key={item.id}
                         title={item.title}
                         text={item.text}
+                        tech={item.tech}
                         img={item.img}
                         button="Saiba Mais"
                         id={item.id}
