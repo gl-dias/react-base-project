@@ -17,7 +17,6 @@ const Top = styled.header`
     color: var(--primaria);
     text-transform: uppercase;
     &:hover{
-      background-color: var(--destaque);
       color: var(--secundaria);
       }
   }
