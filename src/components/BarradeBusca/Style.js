@@ -9,6 +9,7 @@ const BBusca = styled.div`
         padding: 1.5em 1.3em;
         border-radius: .9em;
         background-color: var(--background);
+        margin-bottom: 30px;
     }
 
     .search {

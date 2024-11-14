@@ -7,6 +7,7 @@ const Personalizacao = styled.div`
   margin-top: 15px;
   max-width: 1200px;
   margin: auto;
+  margin-bottom: 30px;
 
   @media (max-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
