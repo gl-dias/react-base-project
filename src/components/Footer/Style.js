@@ -89,7 +89,11 @@ const FooterF = styled.footer`
   @media (max-width: 425px) {
     font-size: 18px;
     padding: 5px 0;
-
+    width: 100vw;      
+    margin: 0;         
+    padding: 15px;     
+    font-size: 1.5rem; 
+    
     .links a,
     .social-column a {
       width: 100%;

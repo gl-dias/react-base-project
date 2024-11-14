@@ -32,6 +32,11 @@ const Top = styled.header`
 
   @media (max-width: 425px) {
     padding: 0.5em 1em;
+    width: 100vw;      
+    margin: 0;         
+    padding: 15px;     
+    font-size: 1.5rem; 
+    
     
     a {
       min-width: 100%;
