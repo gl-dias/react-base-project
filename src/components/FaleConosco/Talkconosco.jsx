@@ -1,6 +1,6 @@
-import { Fale } from "./style";
+import {Fale} from "./style";
 
-const Talkconosco = () => (
+const TalkConosco = () => (
     <Fale> 
         <div className="FC">
             <h1>Fale conosco</h1>
@@ -13,4 +13,4 @@ const Talkconosco = () => (
     </Fale>
 );
 
-export default Talkconosco ;
+export default TalkConosco;

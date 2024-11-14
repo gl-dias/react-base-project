@@ -12,7 +12,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import Atletas from "./pages/Atletas";
 import Detalhamento from "./pages/Detalhamento";
 import SobreNos from "./pages/SobreNos";
-import FaleConosco from "./pages/Faleconosco";
+import FaleConosco from "./pages/FaleConosco";
 
 
 const container = document.getElementById("root");
