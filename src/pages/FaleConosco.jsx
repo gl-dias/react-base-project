@@ -1,13 +1,13 @@
 import React from "react";
 import Base from "./Base";
-import Talkconosco from "../components/FaleConosco/Talkconosco";
+import TalkConosco from "../components/FaleConosco/Talkconosco";
 
 
 
 const FaleConosco = () => {
     return (
         <Base>
-            <Talkconosco />
+            <TalkConosco />
         </Base>
     )
 };
