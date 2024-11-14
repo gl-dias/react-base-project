@@ -9,8 +9,8 @@ const Header = () => (
         </a>
       </div>
     <Link to="/">Projetos</Link>
-    <Link to="/sobrenos">Sobre nós</Link>
-    <Link to="/faleconosco">Fale conosco</Link>
+    <Link to="/sobrenos">Sobre Nós</Link>
+    <Link to="/faleconosco">Fale Conosco</Link>
     
     { window.sessionStorage.getItem('accessToken')
     ? <Link to="/logout"></Link>
