@@ -9,11 +9,12 @@ const Header = () => (
         </a>
       </div>
     <Link to="/">Projetos</Link>
-    <Link to="/projetos">Sobre nós</Link>
+    <Link to="/sobrenos">Sobre nós</Link>
+    <Link to="/faleconosco">Fale conosco</Link>
     
     { window.sessionStorage.getItem('accessToken')
-    ? <Link to="/logout">Logout</Link>
-    : <Link to="/login">Login</Link>
+    ? <Link to="/logout"></Link>
+    : <Link to="/login"></Link>
     }
     
   </Top>
