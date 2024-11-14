@@ -25,12 +25,13 @@ const Fale = styled.div`
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 15px; /* Espaçamento entre os itens de contato */
+        gap: 15px; 
     }
 
     .contact-item {
         background-color: white;
         padding: 15px;
+        border: 2px solid var(--detalhe);
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         transition: transform 0.2s;
@@ -57,7 +58,22 @@ const Fale = styled.div`
                 text-decoration: underline;
             }
         }
-    }
-`;
 
-export { Fale };
+        @media (max-width: 400px) {
+        width: 100vw;      
+        margin: 0;         
+        padding: 15px;     
+        font-size: 1.5rem; 
+    }
+    }
+`
+const Bloco = styled.div`
+    background-color: var(--secundaria);
+    color: var(--background);
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 1000%;
+    `;
+
+export { Fale, Bloco };

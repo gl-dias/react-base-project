@@ -1,11 +1,13 @@
-import { Fale } from "./style";
+import { Fale, Bloco } from "./style";
 
 const TalkConosco = () => (
     <Fale>
-        <div className="FC">
-            <h1>Fale Conosco</h1>
-            <h4>Emails para contato:</h4>
-        </div>
+        <Bloco>
+            <div className="FC">
+                <h1>Fale Conosco</h1>
+            </div>
+        </Bloco>
+        <h3>Contatos:</h3>
         <div className="contact-list">
             <div className="contact-item">
                 <h5>Guilherme Dias</h5>
