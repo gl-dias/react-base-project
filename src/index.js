@@ -12,6 +12,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import Atletas from "./pages/Atletas";
 import Detalhamento from "./pages/Detalhamento";
 import SobreNos from "./pages/SobreNos";
+import FaleConosco from "./pages/Faleconosco";
 
 
 const container = document.getElementById("root");
@@ -35,7 +36,7 @@ root.render(
         <Route path="/login" element={<Login/>} />
         <Route path="/logout" element={<Logout/>} />
         <Route path="/detalhamento/:id" element={<Detalhamento/>} />
-        {/*<Route path="/faleconosco" element={<FaleConosco/>} />*/}
+        <Route path="/faleconosco" element={<FaleConosco/>} />
         <Route path="/sobrenos" element={<SobreNos/>} />
       </Routes>
     </HashRouter>
