@@ -12,13 +12,13 @@ const Busca = ({ onSearch }) => {
 
     return (
         <BBusca>
-            <div className = "divContainer">
+            <div className="divContainer">
                 <input 
-                    className = "search"
-                    type = "text" 
-                    value = {searchTerm}
-                    placeholder = "Digite aqui para buscar os projetos"
-                    onChange = {filtra} 
+                    className="search"
+                    type="text" 
+                    value={searchTerm}
+                    placeholder="Digite aqui para buscar os projetos ou alunos"
+                    onChange={filtra} 
                 />
             </div>
         </BBusca>
