@@ -35,7 +35,7 @@ const SobreAGente = () => (
 
             <Card className="Juliana">
                 <h3>Juliana de Oliveira</h3>
-                <img src="imagens/Juli.jpeg" alt="Foto de Juliana"/>
+                <img src="imagens/juli.jpeg" alt="Foto de Juliana"/>
                 <p>Matrícula: 202203947729</p>
                 <p>Idade: 22 anos</p>
                 <p>Período: 4º</p>
