@@ -7,7 +7,7 @@ import { Container } from "./Style";
             <Container>
                 <div id='cards'>
                     <h2 id='title'>{props.title}</h2>
-                    <img id='img' src={props.img}></img>
+                    <img id='img' src={props.image}></img>
                     <p id='text'>{props.text}</p>
                     <p id="tech">{props.tech}</p>
                     <div className="button-container">

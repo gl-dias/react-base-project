@@ -49,8 +49,11 @@ const Container = styled.div`
   }
  
  img {
-    height: 150px;
+    height: 100px;
     margin: 0.5em 0;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
   }
 
 `;

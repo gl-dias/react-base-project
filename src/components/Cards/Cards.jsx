@@ -32,7 +32,7 @@ function Projects() {
                         title={item.title}
                         text={item.text}
                         tech={item.tech}
-                        img={item.img}
+                        image={item.image}
                         button="Saiba Mais"
                         id={item.id}
                     />
