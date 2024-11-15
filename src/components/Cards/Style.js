@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 const Personalizacao = styled.div`
-  margin-left: 85px;
-  margin-right: 85px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 15px;
   gap: 5px 10px;
+  margin-top: 15px;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 30px;
 
   @media (max-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
@@ -23,5 +24,6 @@ const Personalizacao = styled.div`
     justify-content: center;
   }
 `;
+
 
 export { Personalizacao };

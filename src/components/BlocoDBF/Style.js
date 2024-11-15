@@ -4,7 +4,7 @@ const Container = styled.div`
   width: 100%;
   padding: 50px;
   height: min-content;
-  background-color: rgb(0, 37, 85);
+  background-color: var(--secundaria);
   border: 1px solid var(--primaria);
   box-sizing: border-box;
   

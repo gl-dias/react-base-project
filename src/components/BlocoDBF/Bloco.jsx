@@ -1,6 +1,6 @@
 import { Container } from "./Style";
 
-const Bloco = (props) => (
+const Bloco = () => (
     <Container>
         <div className="blocoprincipal">
             <h1>Projetos</h1>

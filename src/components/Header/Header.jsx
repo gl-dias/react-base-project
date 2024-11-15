@@ -8,12 +8,13 @@ const Header = () => (
           <img src="https://blog.ibmec.br/wp-content/uploads/2021/04/Ibmec.png" width={96.14} height={30} alt="Logo da ibmec" id="logo" />
         </a>
       </div>
-    <Link to="/">Home</Link>
-    <Link to="/projetos">Sobre nós</Link>
+    <Link to="/">Projetos</Link>
+    <Link to="/sobrenos">Sobre Nós</Link>
+    <Link to="/faleconosco">Fale Conosco</Link>
     
     { window.sessionStorage.getItem('accessToken')
-    ? <Link to="/logout">Logout</Link>
-    : <Link to="/login">Login</Link>
+    ? <Link to="/logout"></Link>
+    : <Link to="/login"></Link>
     }
     
   </Top>

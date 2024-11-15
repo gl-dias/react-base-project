@@ -23,8 +23,11 @@ const Home = () => {
     <Base>
       <div className="HeaderA">
         <Bloco />
+      </div>
+      <div className="Card">
         <Cards />
       </div>
+      
     </Base>
   )
 }

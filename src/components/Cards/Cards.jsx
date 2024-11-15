@@ -1,31 +1,45 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Card from "../ProjectCard/ProjectCard";
+import BarradeBusca from "../BarradeBusca/BarradeBusca";
 import { Personalizacao } from "./Style";
 
 function Projects() {
-    const listc = [
-        {id: 1, title: "Projeto de ...", text: "Tecnologias",img: "https://th.bing.com/th/id/OIP._3VD-QKKpNBXTTi6cSsAqQHaE8?rs=1&pid=ImgDetMain", button: "Saiba mais"},
-        {id: 2, title: "Projeto de ...", text: "Tecnologias",img: "https://th.bing.com/th/id/OIP._3VD-QKKpNBXTTi6cSsAqQHaE8?rs=1&pid=ImgDetMain", button: "Saiba mais"},
-        {id: 3, title: "Projeto de ...", text: "Tecnologias",img: "https://th.bing.com/th/id/OIP._3VD-QKKpNBXTTi6cSsAqQHaE8?rs=1&pid=ImgDetMain", button: "Saiba mais"},
-        {id: 4, title: "Projeto de ...", text: "Tecnologias",img: "https://th.bing.com/th/id/OIP._3VD-QKKpNBXTTi6cSsAqQHaE8?rs=1&pid=ImgDetMain", button: "Saiba mais"},
-        {id: 5, title: "Projeto de ...", text: "Tecnologias",img: "https://th.bing.com/th/id/OIP._3VD-QKKpNBXTTi6cSsAqQHaE8?rs=1&pid=ImgDetMain", button: "Saiba mais"},
-        {id: 6, title: "Projeto de ...", text: "Tecnologias",img: "https://th.bing.com/th/id/OIP._3VD-QKKpNBXTTi6cSsAqQHaE8?rs=1&pid=ImgDetMain", button: "Saiba mais"},
-        {id: 7, title: "Projeto de ...", text: "Tecnologias",img: "https://th.bing.com/th/id/OIP._3VD-QKKpNBXTTi6cSsAqQHaE8?rs=1&pid=ImgDetMain", button: "Saiba mais"},
-        {id: 8, title: "Projeto de ...", text: "Tecnologias",img: "https://th.bing.com/th/id/OIP._3VD-QKKpNBXTTi6cSsAqQHaE8?rs=1&pid=ImgDetMain", button: "Saiba mais"},
-        ]
+    const [projects, setProjects] = useState([]);
+    const [searchTerm, setSearchTerm] = useState("");
+
+    const handleSearch = (term) => {
+        setSearchTerm(term);
+    };
+
+    useEffect(() => {
+        const data = require("../../data/projects.json"); 
+        setProjects(data); 
+    }, []);
+
+    const filteredProjects = projects.filter((item) => {
+        const titleMatch = item.title.toLowerCase().includes(searchTerm.toLowerCase());
+        const membersMatch = item.members.toLowerCase().includes(searchTerm.toLowerCase());
+        return titleMatch || membersMatch;
+}); 
 
     return (
-        <Personalizacao> 
-            {listc.map((item) => (
-                <Card key={item.id} 
-                title={item.title} 
-                text={item.text} 
-                img={item.img} 
-                button={item.button}
-                id={item.id} />
-            ))}
-        </Personalizacao>
-    )
+        <>
+            <BarradeBusca onSearch={handleSearch} />
+            <Personalizacao>
+                {filteredProjects.map((item) => (
+                    <Card
+                        key={item.id}
+                        title={item.title}
+                        text={item.text}
+                        tech={item.tech}
+                        image={item.image}
+                        button="Saiba Mais"
+                        id={item.id}
+                    />
+                ))}
+            </Personalizacao>
+        </>
+    );
 }
 
 export default Projects;
