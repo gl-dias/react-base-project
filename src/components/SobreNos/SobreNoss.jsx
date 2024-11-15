@@ -8,7 +8,7 @@ const SobreAGente = () => (
         <Container>
             <Card className="Guilherme">
                 <h3>Guilherme Dias Batista</h3>
-                <img src="imagems/gui.jpeg" alt="Foto de Guilherme Dias"/>
+                <img src="imagens/gui.jpeg" alt="Foto de Guilherme Dias"/>
                 <p>Matrícula: 202402972091</p>
                 <p>Idade: 19 anos</p>
                 <p>Período: 2º</p>
