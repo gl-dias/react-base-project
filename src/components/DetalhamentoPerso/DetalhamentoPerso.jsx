@@ -19,13 +19,13 @@ const PersoDetalhes = () => {
     return (
         <DetalhamentoContainer>
             <div>
-                <p><strong>ID:{id}</strong></p>
                 <h1>{project.title}</h1>
                 <img src={project.image} alt={`Imagem do projeto ${project.title}`} />
                 <p><strong>Tecnologias:</strong> {project.tech}</p>
                 <p><strong>Descrição:</strong> {project.description}</p>
                 <p><strong>Data:</strong> {project.date}</p>
                 <p><strong>Alunos:</strong> {project.members}</p>
+                <p><strong>ID:{id}</strong></p>
             </div>
         </DetalhamentoContainer>
     );
