@@ -18,7 +18,9 @@ import FaleConosco from "./pages/Faleconosco";
 const container = document.getElementById("root");
 const root = createRoot(container);
 
-onAuthStateChanged(auth, (user)=> {
+window.sessionStorage.removeItem("accessToken");
+
+onAuthStateChanged(auth, (user) => {
   if (user) {
     window.sessionStorage.setItem("accessToken", user.accessToken);
   } else {
