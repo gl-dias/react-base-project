@@ -39,7 +39,7 @@ const SobreAGente = () => (
                 <p>Matrícula: 202203947729</p>
                 <p>Idade: 22 anos</p>
                 <p>Período: 4º</p>
-                <p>Curso: ADS</p>
+                <p>Curso: Engenharia da computação</p>
             </Card>
         </Container>
     </Sobre>

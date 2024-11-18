@@ -5,21 +5,22 @@ const LoginContainer = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 80vh;  /* Ajuste para não ocupar toda a altura da tela */
-  padding-top: 60px; /* Deixe o espaço para o menu fixo */
+  padding-top: 20px; /* Deixe o espaço para o menu fixo */
   background-color: var(--background);  /* Cor de fundo da página */
+  background-color: #021859;
 `;
 
 const LoginForm = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Para distribuir o espaço entre os campos e o botão */
-  padding: 2em;
+  padding: 4em;
   border-radius: 8px;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 80%;  /* O formulário ocupa 80% da largura da tela */
+  width: 30%;  /* O formulário ocupa 80% da largura da tela */
   max-width: 100%;
-  min-width: 300px;
+  min-width: 30%;
   height: auto;  /* Ajuste a altura conforme o conteúdo */
   text-align: left; /* Alinha os textos à esquerda */
 

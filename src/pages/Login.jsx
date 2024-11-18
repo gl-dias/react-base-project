@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../config/Firebase";
 import LoginForms from "../components/login/loginForms"; 
+import Base from "./Base";
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -20,7 +21,9 @@ const Login = () => {
   };
 
   return (
-    <LoginForms handleLogin={handleLogin} email={email} setEmail={setEmail} password={password} setPassword={setPassword} />
+    <Base>
+      <LoginForms handleLogin={handleLogin} email={email} setEmail={setEmail} password={password} setPassword={setPassword} />
+    </Base>
   );
 };
 
