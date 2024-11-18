@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { redirect, useNavigate } from "react-router-dom";
-import { auth } from "../config/Firebase";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import Base from "./Base";
+import { auth } from "../config/Firebase";
+import LoginForms from "../components/login/loginForms"; 
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -13,31 +13,15 @@ const Login = () => {
     event.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate('/');
+      navigate('/'); // Redireciona após login bem-sucedido
     } catch (error) {
-      alert(error.message);
+      alert(error.message); // Exibe erro caso falhe
     }
   };
 
   return (
-    <Base>
-      <form onSubmit={handleLogin}>
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email"
-        />
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
-        />
-        <button type="submit">Login</button>
-      </form>
-    </Base>
-  )
-}
+    <LoginForms handleLogin={handleLogin} email={email} setEmail={setEmail} password={password} setPassword={setPassword} />
+  );
+};
 
 export default Login;
