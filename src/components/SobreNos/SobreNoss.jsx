@@ -56,8 +56,8 @@ const SobreAGente = () => (
                 <img src="imagens/pedro.png" alt="Foto de Pedro"/>
                 <p>Matrícula: 202202640522</p>
                 <p>Idade: 20 anos</p>
-                <p>Período: 3º</p>
-                <p>Curso: Ciência de Dados</p>
+                <p>Período: 5º</p>
+                <p>Curso: Ciência de dados</p>
             </Card>
 
         </Container>
