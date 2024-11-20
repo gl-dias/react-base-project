@@ -54,10 +54,10 @@ const SobreAGente = () => (
             <Card className="Pedro">
                 <h3>Pedro Quadrat</h3>
                 <img src="imagens/pedro.png" alt="Foto de Pedro"/>
-                <p>Matrícula: 202307164135</p>
+                <p>Matrícula: 202202640522</p>
                 <p>Idade: 20 anos</p>
-                <p>Período: 2º</p>
-                <p>Curso: ADS</p>
+                <p>Período: 3º</p>
+                <p>Curso: Ciência de Dados</p>
             </Card>
 
         </Container>
