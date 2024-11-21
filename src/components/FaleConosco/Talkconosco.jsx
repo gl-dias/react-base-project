@@ -29,6 +29,16 @@ const TalkConosco = () => (
                 <p>Email: <a href="mailto:202203947729@alunos.ibmec.edu.br">202203947729@alunos.ibmec.edu.br</a></p>
                 <p>GitHub: <a href="https://github.com/julijolie" target="_blank" rel="noopener noreferrer">julijolie</a></p>
             </div>
+            <div className="contact-item">
+                <h5>Raphael de Oliveira</h5>
+                <p>Email: <a href="mailto:202307164135@alunos.ibmec.edu.br">202307164135@alunos.ibmec.edu.br</a></p>
+                <p>GitHub: <a href="https://github.com/Raphael220904" target="_blank" rel="noopener noreferrer">Raphael220904</a></p>
+            </div>
+            <div className="contact-item">
+                <h5>Pedro Quadrat</h5>
+                <p>Email: <a href="mailto:202202640522@alunos.ibmec.edu.br">202202640522@alunos.ibmec.edu.br</a></p>
+                <p>GitHub: <a href="https://github.com/PedroQuadrat" target="_blank" rel="noopener noreferrer">PedroQuadrat</a></p>
+            </div>
         </div>
     </Fale>
 );
