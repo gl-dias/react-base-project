@@ -8,7 +8,7 @@ const SobreAGente = () => (
         <Container>
             <Card className="Guilherme">
                 <h3>Guilherme Dias Batista</h3>
-                <img src="imagems/gui.jpeg" alt="Foto de Guilherme Dias"/>
+                <img src="imagens/gui.jpeg" alt="Foto de Guilherme Dias"/>
                 <p>Matrícula: 202402972091</p>
                 <p>Idade: 19 anos</p>
                 <p>Período: 2º</p>
@@ -39,8 +39,27 @@ const SobreAGente = () => (
                 <p>Matrícula: 202203947729</p>
                 <p>Idade: 22 anos</p>
                 <p>Período: 4º</p>
+                <p>Curso: Engenharia da computação</p>
+            </Card>
+
+            <Card className="Raphael">
+                <h3>Raphael de Oliveira</h3>
+                <img src="imagens/raphael.png" alt="Foto de Raphael"/>
+                <p>Matrícula: 202307164135</p>
+                <p>Idade: 20 anos</p>
+                <p>Período: 1º</p>
                 <p>Curso: ADS</p>
             </Card>
+
+            <Card className="Pedro">
+                <h3>Pedro Quadrat</h3>
+                <img src="imagens/pedro.png" alt="Foto de Pedro"/>
+                <p>Matrícula: 202202640522</p>
+                <p>Idade: 20 anos</p>
+                <p>Período: 5º</p>
+                <p>Curso: Ciência de dados</p>
+            </Card>
+
         </Container>
     </Sobre>
 );

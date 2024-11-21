@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const FooterF = styled.footer`
   background-color: rgb(9, 35, 128);
-  font-size: 23px;
+  font-size: 16px;
   position: relative; /* Alterado para 'relative' */
   bottom: 0;
   width: 100%;
@@ -22,7 +22,7 @@ const FooterF = styled.footer`
   .links {
     margin-top: 10px; /* Espaçamento entre a imagem e os links */
     padding: 0; /* Remover padding para evitar área clicável extra */
-    font-size: 30px;
+    font-size: 16px;
     display: flex; /* Usar flex para alinhar os links horizontalmente */
     justify-content: center; /* Centralizar os links */
   }
