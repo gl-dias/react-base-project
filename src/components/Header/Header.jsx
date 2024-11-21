@@ -17,11 +17,6 @@ const Header = () => (
     <Link to="/">Projetos</Link>
     <Link to="/sobrenos">Sobre Nós</Link>
     <Link to="/faleconosco">Fale Conosco</Link>
-
-    {/* Link de login ou logout no lado direito */}
-    <Link to={window.sessionStorage.getItem('accessToken') ? "/logout" : "/login"} style={{ marginLeft: "auto" }}>
-      {window.sessionStorage.getItem('accessToken') ? "Logout" : "Login"}
-    </Link>
   </Top>
 );
 
