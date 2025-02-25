@@ -3,6 +3,11 @@
 Esse é um projeto de uma aplicação base usando React e Firebase construído com motivações didáticas.
 
 
+## Imagens do Projeto
+
+![imagem da home do site](./public/imagens/Home-react-project.png)  ![imagem de dentro da página de um projeto](./public/imagens/Dentro-de-Projeto.png)
+
+
 ## Dependências
 
 - https://nodejs.org/en : Necessário para rodar o projeto localmente.
